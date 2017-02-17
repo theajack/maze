@@ -1,0 +1,113 @@
+
+
+body{
+  width: 100%;
+  height: 100%;
+  overflow-y:auto;
+  background-color:#000;
+  color:#fff;
+  font-family: "Open Sans",Arial,sans-serif;
+  line-height: 22px;
+  margin: 0;
+  font-size: 13px;
+  position:fixed;
+}
+#gameCanvas{
+  background-color:#fff;
+  margin:10px auto;
+  display:block;
+}
+
+#map{
+  background-color:#fff;
+  position:absolute;
+  transition:all 0.3s linear;
+  -webkit-transition:all 0.3s linear;
+}
+#player{
+  position:absolute;
+  border-radius:50%;
+  background-color:#f00;
+}
+#view{
+  position:absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 10px #aaa;
+}
+.wall,.road,.target,.star{
+  float:left;
+}
+.wall{
+  background-color:#666;
+}
+.road{
+}
+.target{
+  background-color:#0f0;
+  border-radius:50%;
+}
+.star{
+  background-color:#ff0;
+  border-radius:50%;
+  transition:background-color 0.3s linear;
+  -webkit-transition:background-color 0.3s linear;
+}
+.wall.v1{
+  background-color:#444;
+}
+.wall.v2{
+  background-color:#222;
+}
+.road.v1{
+  background-color:#888;
+}
+.road.v2{
+  background-color:#666;
+}
+.wall.hide,.road.hide{
+  background-color:#000;
+}
+
+#starWrapper{
+  width:150px;
+  height:50px;
+  position:absolute;
+}
+.star-logo{
+  width: 44px;
+  height: 44px;
+  margin: 3px;
+  background-color: #ddd;
+  border-radius: 50%;
+  float: left;
+  transition:background-color 0.3s linear;
+  -webkit-transition:background-color 0.3s linear;
+}
+.star-logo.get{
+  background-color: #ff0;
+}
+#btnBigWrapper{
+  position:absolute;
+  width:100%;
+  height:auto;
+  bottom:10px;
+  display:none;
+}
+#btnWrapper{
+  margin:0 auto;
+}
+.fill,.button{
+  float:left;
+  margin:2px;
+}
+.button{
+  background: rgba(150,150,150,.5);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-size:cover;
+}
+#up{background-image:url('../images/arrow_up.png')}
+#down{background-image:url('../images/arrow_down.png')}
+#left{background-image:url('../images/arrow_left.png')}
+#right{background-image:url('../images/arrow_right.png')}
