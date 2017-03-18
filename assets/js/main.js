@@ -43,7 +43,7 @@ function setSize(){
   len=Math.round(((width>height)?height:width)*2/9);
   mapLen=len*size;
   viewLen=viewSize*2*len;
-  if(Jet.isMobile()){
+  if(J.isMobile()){
     var bwWidth=(width>height)?width/3:width*0.8;
     var blen=Math.round(bwWidth/3);
     bwWidth=blen*3;
@@ -111,7 +111,7 @@ function moveMap(){
     J.id("starWrapper").child(starNum).addClass("get");
     starNum++;
   }else if(item==2&&starNum==3){
-    Jet.showWait("You win!","success");
+    J.showWait("You win!","success");
   }
 }
 function checkWin(){ 
