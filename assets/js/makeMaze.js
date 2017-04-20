@@ -114,13 +114,13 @@ function createRoad(){
       t_min=1;
       t_max=2;
     }
-    dirc=J.getRandom(t_min,t_max);
+    dirc=J.random(t_min,t_max);
     while(!checkDirc(step_min)){
-      dirc=J.getRandom(t_min,t_max);
+      dirc=J.random(t_min,t_max);
     }
-    step_len=J.getRandom(step_min,step_max);
+    step_len=J.random(step_min,step_max);
     while(!checkDirc(step_len)){
-      step_len=J.getRandom(step_min,step_max);
+      step_len=J.random(step_min,step_max);
     }
     
     switch(dirc){

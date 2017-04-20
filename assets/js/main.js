@@ -14,6 +14,7 @@ J.ready(function(){
   canvas.height=height;
   geneMaze();*/
   setSize();
+  scrollFix();
   createMaze();
   J.class("button").event({
     "onmousedown":function(){
@@ -37,6 +38,17 @@ J.ready(function(){
 });
 function test(){
   
+}
+
+function scrollFix(){
+  J.body().event({
+    ontouchmove:function(event){
+      event.preventDefault();
+    },
+    ontouchstart:function(event){
+      event.preventDefault();
+    }
+  });
 }
 function setSize(){
   height=J.height(),width=J.width(),cx=width/2,cy=height/2;
